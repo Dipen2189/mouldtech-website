@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mould Tech</title>
+    <link rel="icon" href="logo2.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+</head>
+
+<body>
+    <section id="main" class="center">
+        <div id="particles-js"></div>
+        <div class="user_info">
+            <h1 class="user_name">Mould Tech Engineering.</h1>
+            <p>Plastic product</p>
+            <a href="#About" class="btn">About Us</a>
+        </div>
+        <div class="user_img">
+            <img src="logo2.jpeg" alt="logo" />
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about center" id="About">
+        <div class="center">
+            <h1 class="about_heading">About</h1>
+            <p>
+                Hello! My name is Dipen Prajapati, and I'm a web developer. I have a diverse set of skills,ranging from design, to HTML + CSS + javascript.
+            </p>
+        </div>
+        <img src="logo2.jpeg" alt="company image">
+    </section>
+    <section class="skills center" id="Skills">
+        <p class="skill_head">Products</p>
+        <div class="skill_box center">
+            <div class="box">
+                <img src="home_image/household.jpg" alt="household" style="height: 100%px; width: 100%;">
+                <p>HouseHold</p>
+            </div>
+            <div class="box">
+                <img src="home_image/industrial2.jpg" alt="industrial" style="height: 100%px; width: 100%;">
+                <p>Industrial</p>
+            </div>
+            <div class="box">
+                <img src="home_image/medical.jpg" alt="medical" style="height: 100%px; width: 100%;">
+                <p>Medical</p>
+            </div>
+            <div class="box">
+                <img src="home_image/electronic.jpg" alt="electronic" style="height: 100%px; width: 100%;">
+                <p>Electronic</p>
+            </div>
+            <div class="box">
+                <img src="home_image/capsclosures.jpg" alt="capclouser" style="height: 100%px; width: 100%;">
+                <p>Cap Clousers</p>
+            </div>
+            <div class="box">
+                <img src="home_image/washingbrush.jpg" alt="Washingbrush" style="height: 100%px; width: 100%;">
+                <p>Washing Brush</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects center" id="Projects">
+        <h1 class="project_heading">Location</h1>
+        <div class="container center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d733.8650831513938!2d72.92583550242294!3d20.377502107871198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0ce4c7a03496b%3A0xe98e6c06a40adcba!2sAMBE%20MATA%20MANDIR!5e0!3m2!1sen!2sin!4v1620534710727!5m2!1sen!2sin"
+                width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="center">
+        <h1>Stay Connected</h1>
+        <div class="social_media_icons">
+            <p>Address</p>
+        </div>
+        <div>
+            <a href="https://mail.google.com">
+                dipenprajapati1999@gmail.com
+            </a>
+        </div>
+    </footer>
+
+    <!-- Toggle -->
+    <div class="toggle center active" id="toggle">
+        <div class="box center">
+            <a href="#main" class="links center">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </a>
+        </div>
+        <div class="box center">
+            <a href="#About" class="links center">
+                <i class="fas fa-address-card"></i>
+                <p>About</p>
+            </a>
+            <input type="checkbox" name="" id="btn" />
+            <a href="#Skills" class="links center">
+                <i class="fas fa-project-diagram"></i>
+                <p>Products</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#Projects" class=" links center">
+                <i class="fas fa-map"></i>
+                <p>Location</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script>
+        const toggle = document.getElementById("toggle");
+        const btn = document.getElementById("btn");
+        const links = document.querySelectorAll(".links");
+
+        btn.addEventListener("click", (e) => {
+            toggle.classList.toggle("active");
+        });
+        links.forEach((e) => {
+            e.addEventListener("click", () => {
+                toggle.classList.toggle("active");
+            })
+        });
+    </script>
+</body>
+
+</html>
